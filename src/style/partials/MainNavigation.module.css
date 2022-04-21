@@ -1,0 +1,93 @@
+.nav {
+	overflow: hidden;
+	height: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	position: relative;
+	top: -50px;
+}
+.nav_middle {
+	margin-left: -130px;
+}
+.nav_link {
+	position: relative;
+	top: 37px;
+	text-decoration: none;
+	color: #b3a485;
+	text-shadow: 1px 1px 1px black;
+	padding: 0 10px;
+	margin: 0 5px;
+	font-size: 20px;
+	font-weight: 600;
+	transition: 0.3s ease;
+}
+.nav_link:hover {
+	color: #472a2a;
+}
+.logout_button {
+	font-size: 16px;
+	outline: none;
+	border: none;
+	padding: 0 5px;
+	background: #b3a485;
+	color: #2a4747;
+	height: 40px;
+	position: relative;
+	top: 37px;
+	box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.75);
+	transition: 0.3s ease;
+}
+.logout_button:hover {
+	background: #2a4747;
+	color: #b3a485;
+}
+@media (max-width: 600px) {
+	.nav {
+		padding-left: 0;
+	}
+	.nav_link {
+		font-size: 16px;
+		top: 42px;
+	}
+	.nav_middle {
+		margin-left: 0px;
+	}
+}
+@media (max-width: 500px) {
+	.logo {
+		width: 150px;
+		top: -23px;
+	}
+}
+@media (max-width: 400px) {
+	.nav_link {
+		padding: 0 2px;
+	}
+	.nav {
+		padding-right: 0;
+	}
+}
+
+@media (max-width: 330px) {
+	.nav_link {
+		font-size: 12px;
+	}
+	.login_link {
+		top: 46px;
+	}
+	.logo {
+		width: 120px;
+		top: -7px;
+	}
+	.logout_button {
+		font-size: 12px;
+		height: 30px;
+	}
+}

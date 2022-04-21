@@ -1,0 +1,86 @@
+.form_container {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+}
+.form {
+	width: 450px;
+	padding: 40px;
+	background: #2a4747;
+	text-align: center;
+	border-radius: 50px;
+	box-shadow: 5px 5px 15px 5px black;
+	margin-bottom: 50px;
+}
+.input {
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #b3a485;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 23px;
+	transition: 0.25s;
+}
+.input::placeholder {
+	color: #d7d7d9;
+}
+.input:focus {
+	width: 290px;
+	border-color: #669494;
+}
+.login_error {
+	color: Red;
+}
+.button {
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #2ecc71;
+	padding: 14px 45px;
+	outline: none;
+	color: #d7d7d9;
+	border-radius: 23px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 0px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.button:hover {
+	background: #2ecc71;
+	color: white;
+}
+.loader_container {
+	display: flex;
+	justify-content: center;
+}
+.login_error_container {
+	background: red;
+	width: 300px;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+}
+@media (max-width: 500px) {
+	.form {
+		max-width: 300px;
+		padding: 14px 0;
+	}
+	.input {
+		width: 170px;
+	}
+	.input:focus {
+		width: 220px;
+	}
+}
+
+@media (max-width: 340px) {
+	.form {
+		max-width: 260px;
+	}
+}

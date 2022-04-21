@@ -1,0 +1,27 @@
+.nav {
+	display: flex;
+	justify-content: center;
+	background: #ededed;
+	padding: 10px;
+}
+.nav_link {
+	padding: 20px;
+	color: #b3a485;
+	text-shadow: 1px 1px 1px black;
+	text-decoration: none;
+	padding: 0 10px;
+	margin: 0 5px;
+	font-size: 20px;
+	font-weight: 600;
+
+	transition: 300ms ease;
+}
+.nav_link:hover {
+	cursor: pointer;
+	color: #472a2a;
+}
+@media (max-width: 600px) {
+	.nav_link {
+		font-size: 16px;
+	}
+}
